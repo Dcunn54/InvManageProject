@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="725.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.ModifyPart_OSController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="53.0" prefWidth="170.0" text="Modify Part">
+         <font>
+            <Font name="Arial Black" size="24.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="outsourcedRad" layoutX="419.0" layoutY="30.0" mnemonicParsing="false" selected="true" text="Outsourced">
+         <toggleGroup>
+            <ToggleGroup fx:id="partType" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="inHouseRad" disable="true" layoutX="230.0" layoutY="30.0" mnemonicParsing="false" onAction="#onActionInHouse" text="In-House" toggleGroup="$partType" />
+      <Label layoutX="75.0" layoutY="100.0" text="ID">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="500.0" text="Company Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="420.0" text="Max">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="340.0" text="Price/Cost">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="260.0" text="Inv">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="180.0" text="Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="modOutsourcedIDTxt" disable="true" layoutX="274.0" layoutY="98.0" prefWidth="160.0" />
+      <TextField fx:id="modCompNameTxt" layoutX="274.0" layoutY="498.0" prefWidth="160.0" />
+      <TextField fx:id="modOutsourcedMaxTxt" layoutX="274.0" layoutY="418.0" prefWidth="160.0" />
+      <TextField fx:id="modOutsourcedPriceCostTxt" layoutX="274.0" layoutY="338.0" prefWidth="160.0" />
+      <TextField fx:id="modOutsourcedInvTxt" layoutX="274.0" layoutY="258.0" prefWidth="160.0" />
+      <TextField fx:id="modOutsourcedNameTxt" layoutX="274.0" layoutY="178.0" prefWidth="160.0" />
+      <Label layoutX="472.0" layoutY="420.0" text="Min">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="modOutsourcedMinTxt" layoutX="546.0" layoutY="418.0" prefWidth="160.0" />
+      <Button fx:id="saveModOutsourcedBtn" layoutX="451.0" layoutY="638.0" mnemonicParsing="false" onAction="#onActionSaveOutsourced" prefHeight="50.0" prefWidth="110.0" text="Save" />
+      <Button fx:id="cancelModOutsourcedBtn" layoutX="576.0" layoutY="638.0" mnemonicParsing="false" onAction="#onActionReturnHome" prefHeight="50.0" prefWidth="110.0" text="Cancel" />
+   </children>
+</AnchorPane>
